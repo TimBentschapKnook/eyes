@@ -31,103 +31,184 @@
             position: relative;
             float: left;
             width: 100%;
-            &.topbar {
-                position: relative;
-                float: left;
-                width: 100%;
-                height: auto;
-                margin: 0;
-                padding: 2px 0;
-                background-color: @primairy-color;
-                color: @white;
-                font-size: 13px;
-                .container {
-                    display: grid;
-                    grid-template-columns: repeat(12, 1fr);
-                    > div {
-                        position: relative;
-                        grid-column: span 1;
-                    }
-                    .info {
-                        position: relative;
-                        float: left;
-                        width: auto;
-                        margin: 0;
-                        padding: 0 20px;
-                        grid-column: span 3;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        i {
-                            position: relative;
-                            float: left;
-                            width: auto;
-                            margin: 0;
-                            margin-right: 10px;
-                            padding: 0;
-                            font-size: 16px;
-                        }
-                        p {
-                            position: relative;
-                            float: left;
-                            width: auto;
-                            margin: 0;
-                            padding: 0;
-                        }
-                    }
-                    .number {
-                        position: relative;
-                        float: left;
-                        width: auto;
-                        margin: 0;
-                        padding: 0;
-                        grid-column: span 2;
-                        display: flex;
-                        align-items: center;
-                        i {
-                            position: relative;
-                            float: left;
-                            width: auto;
-                            margin: 0;
-                            margin-right: 10px;
-                            padding: 0;
-                            font-size: 16px;
-                        }
-                        p {
-                            position: relative;
-                            float: left;
-                            width: auto;
-                            margin: 0;
-                            padding: 0;
-                        }
-                    }
-                    .social-media {
-                        position: relative;
-                        float: left;
-                        width: auto;
-                        grid-column: span 4;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        i {
-                            position: relative;
-                            float: left;
-                            padding: 0;
-                            margin: 0;
-                            margin-right: 10px;
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
             &.menu {
                 position: relative;
                 float: left;
                 width: 100%;
                 margin: 0;
-                padding: 30px 0;
-                background-color: red;
+                padding: 50px 0;
+                z-index: 2;
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    > div {
+                        grid-column: span 3;
+                    }
+                    .logo {
+                        position: relative;
+                        float: left;
+                        width: 100%;
+                        height: auto;
+                        margin: 0;
+                        padding: 0;
+                        grid-column: span 2;
+                        display: flex;
+                        justify-items: center;
+                        align-content: center;
+                        span {
+                            position: relative;
+                            float: left;
+                            width: 100%;
+                            padding: 0;
+                            margin: 0;
+                            white-space: nowrap;
+                            color: @white;
+                            font-style: normal;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: #fff;
+                            text-transform: uppercase;
+                            letter-spacing: 10px;
+                            font-size: 30px
+                        }
+                    }
+                    nav {
+                        position: relative;
+                        float: left;
+                        width: 100%;
+                        height: auto;
+                        margin: 0;
+                        padding: 0;
+                        grid-column: 8;
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                        ul {
+                            position: relative;
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: flex-end;
+                            align-content: space-between;
+                            li {
+                                position: relative;
+                                list-style: none;
+                                height: 100%;
+                                margin-right: 80px;
+                                a {
+                                    min-width: 100%;
+                                    height: 100%;
+                                    padding: 8px 0;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    text-decoration: none;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.banner {
+                position: absolute;
+                float: left;
+                width: 100%;
+                min-height: 100vh;
+                max-height: 100vh;
+                z-index: 1;
+                background-image: url('../images/banner.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                .overlay {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    height: 100vh;
+                    width: 100%;
+                    background-color: #00000063;
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                    h1 {
+                        position: relative;
+                        float: left;
+                        width: 100%;
+                        text-align: center;
+                        font-family: @elsie;
+                        color: @primairy-color;
+                        font-weight: 500;
+                        font-size: 80px;
+                        line-height: 80px;
+                    }
+                }
+            }
+            &.slide-down {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 8px;
+                width: 100%;
+                background-color: @white;
+                display: flex;
+                justify-content: center;
+                z-index: 2;
+                .slide-down-image {
+                    position: absolute;
+                    bottom: -7px;
+                    -webkit-animation: mover 1s infinite alternate;
+                    animation: mover 1s infinite alternate;
+                    -webkit-animation: mover 1s infinite alternate;
+                    animation: mover 1s infinite alternate;
+                    cursor: pointer;
+    
+                    .icon {
+                        position: absolute;
+                        bottom: 10px;
+                        z-index: 200;
+                        pointer-events: none;
+                        width: 100%;
+                        text-align: center;
+                        i {
+                            font-size: 23px;
+                            color: @primairy-color;
+                        }
+                    }
+                    img {
+                        width: 121px;
+                        z-index: 9;
+                    }
+                }
             }
         }
     }
  }
+
+
+ // KEYFRAMES VOOR PIJL OP HOMEPAGE TOPMENU
+@-webkit-keyframes mover {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
+@keyframes mover {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-5px);
+	}
+}
