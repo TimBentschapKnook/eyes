@@ -1,0 +1,133 @@
+ // out: ../css/style.css, compress: true, sourceMap: false
+
+ @import '_fonts';
+
+
+ @text-color : #000000;
+ @box : #a3b8bd;
+ @white : #ffffff;
+ @primairy-color: #d8ae72;
+
+ @ubuntu : 'Ubuntu',sans-serif;
+ @elsie : 'Elsie';
+
+
+ html, body {
+    color: @text-color;
+    font-size: 16px;
+    font-family: @ubuntu;
+    overflow-x: hidden;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    header {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 100vh;
+        section {
+            position: relative;
+            float: left;
+            width: 100%;
+            &.topbar {
+                position: relative;
+                float: left;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 2px 0;
+                background-color: @primairy-color;
+                color: @white;
+                font-size: 13px;
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(12, 1fr);
+                    > div {
+                        position: relative;
+                        grid-column: span 1;
+                    }
+                    .info {
+                        position: relative;
+                        float: left;
+                        width: auto;
+                        margin: 0;
+                        padding: 0 20px;
+                        grid-column: span 3;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        i {
+                            position: relative;
+                            float: left;
+                            width: auto;
+                            margin: 0;
+                            margin-right: 10px;
+                            padding: 0;
+                            font-size: 16px;
+                        }
+                        p {
+                            position: relative;
+                            float: left;
+                            width: auto;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .number {
+                        position: relative;
+                        float: left;
+                        width: auto;
+                        margin: 0;
+                        padding: 0;
+                        grid-column: span 2;
+                        display: flex;
+                        align-items: center;
+                        i {
+                            position: relative;
+                            float: left;
+                            width: auto;
+                            margin: 0;
+                            margin-right: 10px;
+                            padding: 0;
+                            font-size: 16px;
+                        }
+                        p {
+                            position: relative;
+                            float: left;
+                            width: auto;
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                    .social-media {
+                        position: relative;
+                        float: left;
+                        width: auto;
+                        grid-column: span 4;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        i {
+                            position: relative;
+                            float: left;
+                            padding: 0;
+                            margin: 0;
+                            margin-right: 10px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            &.menu {
+                position: relative;
+                float: left;
+                width: 100%;
+                margin: 0;
+                padding: 30px 0;
+                background-color: red;
+            }
+        }
+    }
+ }
