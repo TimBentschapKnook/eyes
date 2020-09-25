@@ -71,18 +71,19 @@
                     margin: 0;
                     padding: 0;
                     display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
+					align-items: center;
+					justify-content: flex-end;
                     ul {
                         position: relative;
-                        float: right;
-                        margin: 0;
+						float: left;
+						width: auto;
+                        margin: 0 0 0 40px;
                         padding: 0;
                         li {
                             position: relative;
                             float: left;
                             width: auto;
-                            margin: 0 20px 0 0;
+                            margin: 0 10px 0 0;
                             padding: 10px;
                             list-style-type: none;
                             a {
@@ -93,9 +94,20 @@
                                 padding: 0;
                                 color: @white;
                                 font-weight: 500;
-                                text-decoration: none;
+								text-decoration: none;
+								.shopping-cart {
+									position: relative;
+									float: left;
+									bottom: -5px;
+									.amount {
+										position: absolute;
+										right: -5px;
+										top: -25px;
+										font-weight: 500;
+									}
+								}
                             }
-                        }
+						}
                     }
 				}
 				&.fixed {
@@ -130,9 +142,13 @@
 	
 	
 				}
+			.nav-icon-holder {
+				position: relative;
+				float: left;
+				width: 100%;
 				.nav-icon {
 					position: absolute;
-					right: 20px;
+					right: 35px;
 					top: 21px;
 					width: @nav_size;
 					height: @nav_size;
@@ -229,6 +245,7 @@
 						}
 					}
 				}
+			}
 				
             }
             &.banner {
