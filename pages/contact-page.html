@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="nl">
     <head>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,7 +7,10 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css"/>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/contact-page.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
+
     <body>
         <header>
             <section class="menu">
@@ -23,7 +27,7 @@
                                    <li><a href="/index.html">Home</a></li>
                                    <li><a href="">Onze producten</a></li>
                                    <li><a href="">Over ons</a></li>
-                                   <li><a href="">Contact</a></li>
+                                   <li><a href="/pages/contact-page.html">Contact</a></li>
                                </ul>
                            </nav>
                        </div>
@@ -56,6 +60,58 @@
             </section> 
         </header>
         <section class="clearfix"></section>
+        <!-- Hierboven niet aankomen  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div id=form>
+                        <h1>Neem contact met ons op.</h1>
+                        <h5>Stuur een bericht via het formulier hieronder, mail ons rechtstreeks of pak de telefoon!</h5>
+                        <form action="mailto:info@visionair.nl" enctype="text/plain" method="post" BORDER="0">
+                                <p>Voornaam:<br /> <input name="voornaam" type="text" size="30"></p>
+                                <p>Achternaam:<br /> <input name="achternaam" type="text" size="30"></p>
+                                <p>E-mailadres:<br /> <input name="email" type="text" size="30"></p>
+                                <p>Telefoonnummer:<br /> <input name="telefoon" type="text" size="30"></p>
+            
+                                Bericht:<br /><textarea name="bericht" cols="40" rows="8" ></textarea>
+                                <br>
+                                Toestemming: <input type="checkbox" size="30">
+                                <p>Ik ga ermee akkoord dat VISIONair mijn gegevens gebruikt om contact met mij op te nemen.</p>
+                                <p><input type="submit" name="submit" value="Verzenden">
+                                <input type="reset" value="Reset" name=""></p>
+                        </form>
+                    </div>
+                  </div>
+                <div class="col-4">
+                    <div id=contactinfo>
+                        <h1> Stuur een e-mail of bel.</h1>
+                        <h5>Je kunt ons bellen of stuur een e-mailtje.</h5>
+                        <ul id="nav">
+                                <a href="tel:0629495678"><img src="..//images/bel.png"></a>
+                            </ul>
+                            <ul id="nav">
+                                <a href="mailto:info@visionair.nl"><img src="..//images/e-mail.png"></a>
+                            </ul>
+                        <h1> Volg ons op social media.</h1>
+                        <h5>Je kunt VISIONair óók bereiken via social media.</h5>
+                        <ul id="nav">
+                                <a href="https://www.facebook.com" target=_blank><img src="..//images/Facebook.png"></a>
+                            </ul>
+                            <ul id="nav">
+                                <a href="https://www.instagram.com" target=_blank><img src="..//images/Instagram.png"></a>
+                            </ul>
+                            <ul id="nav">
+                                <a href="https://www.twitter.com" target=_blank><img src="..//images/Twitter.png"></a>
+                            </ul>
+                            <ul id="nav">
+                                <a href="https://web.whatsapp.com"target=_blank><img src="..//images/wathsapp.png"></a>
+                            </ul>
+                    </div> 
+                </div>
+            </div>   
+        </div>
+        <hr>
+        <!-- Hieronder niet aankomen  -->
         <footer>
             <div class="container">
                 <div class="row">
@@ -94,6 +150,11 @@
                 </div>
             </div>
         </section>
+        <!-- Optional JavaScript -->
         <script src="../javascript/scripts.js"></script>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
