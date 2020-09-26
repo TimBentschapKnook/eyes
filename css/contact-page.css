@@ -1,0 +1,28 @@
+h1 {
+    color:#d8ae72;
+}
+
+/* horizontale lijn boven footer */
+hr { border: 3px;
+    color: #d8ae72;
+}
+
+/* horizontale lijst sociale media */
+ul#nav {
+    display: inline;
+    padding: 20px;
+    }
+
+
+form
+    {
+    border-width: 3px;
+    border-style: solid;
+    border-color: #d8ae72;
+
+    padding: 15px;
+    width: 700px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    }
