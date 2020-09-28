@@ -24,35 +24,35 @@ $(document).ready(function() {
 		$(this).toggleClass('open');
 	});
 
-	// // Scroll back to top or bottom header
-	// function onScrollStop() {
-	// 	const scrollPos = $(window).scrollTop();
+	// Scroll back to top or bottom header
+	function onScrollStop() {
+		const scrollPos = $(window).scrollTop();
 
-	// 	if ($('header').length > 0) {
-	// 		const scrollHeight = $('header').height();
-	// 		let scrollTo = scrollHeight;
+		if ($('header').length > 0) {
+			const scrollHeight = $('header').height();
+			let scrollTo = scrollHeight;
 
-	// 		if (scrollPos < scrollHeight) {
-	// 			if ((scrollHeight / 4) * 1 > scrollPos) {
-	// 				scrollTo = 0;
-	// 			}
-	// 			$('html, body').animate(
-	// 				{
-	// 					scrollTop: scrollTo,
-	// 				},
-	// 				500,
-	// 			);
-	// 		}
-	// 	}
-	// }
+			if (scrollPos < scrollHeight) {
+				if ((scrollHeight / 4) * 1 > scrollPos) {
+					scrollTo = 0;
+				}
+				$('html, body').animate(
+					{
+						scrollTop: scrollTo,
+					},
+					500,
+				);
+			}
+		}
+	}
 
-	// // Check on page if scrolled 
-	// $(window).scroll(function() {
-	// 	clearTimeout($.data(this, 'scrollTimer'));
-	// 	$.data(this, 'scrollTimer', setTimeout(function() {
-	// 		onScrollStop();
-	// 	}, 250));
-	// });
+	// Check on page if scrolled 
+	$(window).scroll(function() {
+		clearTimeout($.data(this, 'scrollTimer'));
+		$.data(this, 'scrollTimer', setTimeout(function() {
+			onScrollStop();
+		}, 250));
+	});
 
 	function onScroll() {
 		const menu = $('.menu');
