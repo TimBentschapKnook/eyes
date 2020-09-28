@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // ONLICK ARROW SLIDESHOW HOME FULLSCREEN SCROLL DOWN
-	$('.slide-down-image').on('click', function() {
+	$('#slide-down').on('click', function() {
         const scrollAmount = $('header').height();
 		$('html, body').animate(
 			{
@@ -9,6 +9,19 @@ $(document).ready(function() {
 			},
 			800,
 		);
+	});
+
+	$('#showSpecs').click(function() {
+		$('#specs').toggleClass('showSpecs');
+		if($('#specs').hasClass('showSpecs')) {
+			$('#rotate').addClass('rotate');
+		} else {
+			$('#rotate').removeClass('rotate');
+		}
+	});
+
+	$('.nav-icon').click(function() {
+		$(this).toggleClass('open');
 	});
 
 	// Scroll back to top or bottom header
