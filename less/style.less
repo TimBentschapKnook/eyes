@@ -966,24 +966,24 @@
 		}
 	}
 	.AboutUs {
-				.cycleImg {
+
+				.cycle-slideshow {
+					border-top: 1px solid @primairy-color;
+				}
+
+				.cycle-slideshow img {
+					padding: 10px 20px 0 0;
+					height:auto;
+					width:25%;
 					position: relative;
 					float: left;
-					width: 50%;
-					padding: 0 15px 0 0;
-					margin: auto;
 				}
 
-
-				.cycleP {
-					position: relative;
+				.cycle-slideshow p {
 					float: right;
-					width: 50%;
-					height: 100%;
-					padding: 0;
-					margin: 0;
-				}
-
+					position: relative;
+					width: 75%;
+					height: auto
 				}
 
 				#prev {
@@ -1009,11 +1009,6 @@
 					border: 1px solid @primairy-color;
 					cursor: pointer; 				
 				} 
-
-
-				.AboutUsText {
-					border-bottom: 1px solid @box;
-				}
 		
 			}
 	footer {
@@ -1042,3 +1037,4 @@
 		transform: translateY(-5px);
 	}
 }
+ }
