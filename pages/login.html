@@ -13,13 +13,20 @@
                 margin: 0;
                 box-sizing: border-box;
             }
+            .login-form{
+                padding-top:50px ;
+            }
             .row1{
                 background-color: #d8ae72;
+                border-radius: 6px;
+                
+
             }
             .title{
                 float: left;
                 padding-bottom: 40px;
                 padding-left: 5;
+                text-align: center;
             }
             h1{
                 color: white;
@@ -27,11 +34,35 @@
                 padding-top: 50px;
                 padding-bottom: 10px;
             }
-            
+            .form{
+                text-align: center;
+            }
+            .form-control{
+                margin-top: 3px;
+                margin-bottom: 3px;
+                padding: 5px;
+                padding-right: 30px;
+                size: 50px;
+                
+            }
+            .form-row1{
+                margin-bottom: 30px;
+            }
+            .btn1{
+                border: none;
+                outline: none;
+                height: 40px;
+                width: 100px;
+                background-color: black;
+                border-radius: 4px;
+                color: white;
+                margin-top: 10px;
+            }
+
             
         </style>
     </head>
-    <body id="login-body">
+    <body>
         <header class="not-100vh">
             <section class="menu">
                <div class="container">
@@ -81,15 +112,14 @@
                </div>
         </header>
         
-        <section class="form my-4 mx-5">
-            <div class="container">
+        <section class="login-form">
+            <div class="container" >
                 <div class="row1">
                     <div class=" title col-md-12">
                         <h1> myVISIONair</h1>
                         <h4> Login jouw account</h4>
                     </div>
-                    <div class="col-md-12">
-                        <form>
+                        <form class="form">
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <input type="email" placeholder="E-mailadres" class="form-control">
@@ -100,14 +130,13 @@
                                     <input type="password" placeholder="**********" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="col-md-6">
+                            <div class="form-row1">
+                                <div class="col-md-12">
                                     <button type="button" class="btn1">Login</button>
+                                    <p>Nog geen account? <a href="#">Registreer hier!</a></p>
                                 </div>
                             </div>
-                            <p>Nog geen account? <a href="#">Registreer hier!</a></p>
                         </form>
-                    </div>
                 </div>
             </div>   
         </section>
