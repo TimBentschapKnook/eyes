@@ -21,7 +21,25 @@ $(document).ready(function() {
 	});
 
 	$('.nav-icon').click(function() {
-		$(this).toggleClass('open');
+		$(this).addClass('open');
+		if($(this).hasClass('open')) {
+			$('.side-nav').addClass('open');
+			$('.nav-icon-2').addClass('open');
+		} else {
+			$('.nav-icon-2').removeClass('open');
+			$('.side-nav').removeClass('open');
+		}
+	});
+
+	$('.nav-icon-2').click(function() {
+		if($(this).hasClass('open')) {
+			$('.side-nav').removeClass('open');
+			$('.nav-icon-2').removeClass('open');
+			$('.nav-icon').removeClass('open');
+		} else {
+			$('.side-nav').addClass('open');
+			$('.nav-icon').addClass('open');
+		}
 	});
 
 	// Scroll back to top or bottom header
