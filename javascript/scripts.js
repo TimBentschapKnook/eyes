@@ -57,23 +57,29 @@ $(document).ready(function() {
 	function onScroll() {
 		const menu = $('.menu');
 		const top = $(window).scrollTop();
+		var x = 300;
+		const website_string = window.location.href;
+		const match_string = "index";
 
-		if (top > 300) {
+		if (website_string.includes(match_string)) {
+			x = 300;
+		} else {
+			x = 120;
+		}
+
+		if (top > x) {
 			menu.addClass('visible');
 		} else {
 			menu.removeClass('visible');
 		}
-
-		if (top > 200) {
+		
+		if (top > 80) {
 			menu.addClass('fixed');
 		} else {
 			menu.removeClass('fixed');
 		}
-
-
 	}
 	onScroll();
 	$(window).on('scroll', onScroll);
-
-
+	
 });
