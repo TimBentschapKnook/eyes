@@ -39,24 +39,36 @@
                 padding-bottom: 10px;
             }
             .form-control{
-                margin-top: 3px;
-                margin-bottom:3px;
+                margin-top: 5px;
+                margin-bottom:5px;
                 padding: 8px;
                 padding-right: 30px;
-                size: 50px;
-                border-radius: 4px;
+                width: 50%;
+                overflow: hidden;
+                border-bottom: 2px solid gray;
+            }
+            input{
                 border: none;
                 outline: none;
+                background: none;
+            }
+            ::placeholder{
+                color: gray;
+            }
+            .login-icon{
+                color: gray;
             }
             .btn1{
+                font-weight: bold;
                 border: none;
                 outline: none;
                 height: 40px;
-                width: 100px;
+                width: 200px;
                 background-color:#a3b8bd;
                 border-radius: 4px;
-                color: black;;
-                margin-top: 10px;
+                color: white;
+                margin-top: 30px;
+                
             }
 
             
@@ -122,11 +134,13 @@
                         <form class="form">
                             <div class="form-row">
                                 <div class="col-md-12">
+                                    <i class="login-icon fa fa-user" aria-hidden="true"></i>
                                     <input type="email" placeholder="example@hotmail.com" class="form-control">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col-md-12">
+                                    <i class="login-icon fa fa-lock" aria-hidden="true"></i>
                                     <input type="password" placeholder="**********" class="form-control">
                                 </div>
                             </div>
