@@ -21,38 +21,56 @@ $(document).ready(function() {
 	});
 
 	$('.nav-icon').click(function() {
-		$(this).toggleClass('open');
+		$(this).addClass('open');
+		if($(this).hasClass('open')) {
+			$('.side-nav').addClass('open');
+			$('.nav-icon-2').addClass('open');
+		} else {
+			$('.nav-icon-2').removeClass('open');
+			$('.side-nav').removeClass('open');
+		}
 	});
 
-	// // Scroll back to top or bottom header
-	// function onScrollStop() {
-	// 	const scrollPos = $(window).scrollTop();
+	$('.nav-icon-2').click(function() {
+		if($(this).hasClass('open')) {
+			$('.side-nav').removeClass('open');
+			$('.nav-icon-2').removeClass('open');
+			$('.nav-icon').removeClass('open');
+		} else {
+			$('.side-nav').addClass('open');
+			$('.nav-icon').addClass('open');
+		}
+	});
 
-	// 	if ($('header').length > 0) {
-	// 		const scrollHeight = $('header').height();
-	// 		let scrollTo = scrollHeight;
+	// Scroll back to top or bottom header
+	function onScrollStop() {
+		const scrollPos = $(window).scrollTop();
 
-	// 		if (scrollPos < scrollHeight) {
-	// 			if ((scrollHeight / 4) * 1 > scrollPos) {
-	// 				scrollTo = 0;
-	// 			}
-	// 			$('html, body').animate(
-	// 				{
-	// 					scrollTop: scrollTo,
-	// 				},
-	// 				500,
-	// 			);
-	// 		}
-	// 	}
-	// }
+		if ($('header').length > 0) {
+			const scrollHeight = $('header').height();
+			let scrollTo = scrollHeight;
 
-	// // Check on page if scrolled 
-	// $(window).scroll(function() {
-	// 	clearTimeout($.data(this, 'scrollTimer'));
-	// 	$.data(this, 'scrollTimer', setTimeout(function() {
-	// 		onScrollStop();
-	// 	}, 250));
-	// });
+			if (scrollPos < scrollHeight) {
+				if ((scrollHeight / 4) * 1 > scrollPos) {
+					scrollTo = 0;
+				}
+				$('html, body').animate(
+					{
+						scrollTop: scrollTo,
+					},
+					500,
+				);
+			}
+		}
+	}
+
+	// Check on page if scrolled 
+	$(window).scroll(function() {
+		clearTimeout($.data(this, 'scrollTimer'));
+		$.data(this, 'scrollTimer', setTimeout(function() {
+			onScrollStop();
+		}, 250));
+	});
 
 	function onScroll() {
 		const menu = $('.menu');
