@@ -78,11 +78,8 @@ $(document).ready(function() {
 		} else {
 			menu.removeClass('fixed');
 		}
-
-
 	}
 	onScroll();
 	$(window).on('scroll', onScroll);
-
-
+	
 });
