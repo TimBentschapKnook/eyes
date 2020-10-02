@@ -6,14 +6,20 @@ window.onload = function () {
 
         // The data for our dataset
         data: {
-            labels: ["2017", "2018", "2019", "2020"],
+            labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
             datasets: [{
-                label: "Chart.exe",
-                backgroundColor: "rgb(255, 99, 132)",
+                label: "Linkeroog",
+                //backgroundColor: "rgb(255, 99, 132)",
                 borderColor: "rgb(255, 99, 132)",
-                data: [0, 10, 5, 2]
-            }]
-        },
+                data: [0, 10, 5, 10, 8, 3]
+            },
+            {
+                label: "Rechteroog",
+                //backgroundColor: "rgb(99, 99, 99)",
+                borderColor: "rgb(99, 99, 99)",
+                data: [2, 5, 6, 1, 5, 9]
+            },
+        ]},
     
         // Configuration options go here
         options: {}
