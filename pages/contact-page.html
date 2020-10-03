@@ -64,22 +64,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div id=form>
-                        <h1>Neem contact met ons op.</h1>
-                        <h5>Stuur een bericht via het formulier hieronder, mail ons rechtstreeks of pak de telefoon!</h5>
-                        <form action="mailto:info@visionair.nl" enctype="text/plain" method="post" BORDER="0">
-                                <p>Voornaam:<br /> <input name="voornaam" type="text" size="30"></p>
-                                <p>Achternaam:<br /> <input name="achternaam" type="text" size="30"></p>
-                                <p>E-mailadres:<br /> <input name="email" type="text" size="30"></p>
-                                <p>Telefoonnummer:<br /> <input name="telefoon" type="text" size="30"></p>
-            
-                                Bericht:<br /><textarea name="bericht" cols="40" rows="8" ></textarea>
+                    <div id="form">
+                       <!-- <h1>Neem contact met ons op.</h1> -->
+                       <!-- <h5>Stuur een bericht via het formulier hieronder, mail ons rechtstreeks of pak de telefoon!</h5> -->
+                        <form >
+                            <span>
+                                <p>Voornaam</p>
+                                <input type="text" id="voornaam"/>
+                            </span>
+                                
+                                <p>Achternaam <input type="text" id="achternaam"/><br/>
+                                <p>E-mailadres <input type="text" id="emailadres"/><br/>
+                                <br>                             
+                                Schrijf hier je bericht:<br /><textarea name="bericht" cols="40" rows="8" ></textarea>
                                 <br>
                                 Toestemming: <input type="checkbox" size="30">
                                 <p>Ik ga ermee akkoord dat VISIONair mijn gegevens gebruikt om contact met mij op te nemen.</p>
-                                <p><input type="submit" name="submit" value="Verzenden">
-                                <input type="reset" value="Reset" name=""></p>
-                        </form>
+                                <input type="button" value="Verzenden" onclick="write_name()" />
+                                <input type="button" value="Reset" onclick="resetform()" />
+                                
+                        </form> 
                     </div>
                   </div>
                 <div class="col-lg-4">
@@ -152,6 +156,7 @@
         </section>
         <!-- Optional JavaScript -->
         <script src="../javascript/scripts.js"></script>
+        <script src="../javascript/contactform.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
