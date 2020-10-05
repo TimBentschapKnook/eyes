@@ -64,51 +64,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div id="form">
-                       <!-- <h1>Neem contact met ons op.</h1> -->
-                       <!-- <h5>Stuur een bericht via het formulier hieronder, mail ons rechtstreeks of pak de telefoon!</h5> -->
-                        <form >
-                            <span>
-                                <p>Voornaam</p>
-                                <input type="text" id="voornaam"/>
-                            </span>
-                                
-                                <p>Achternaam <input type="text" id="achternaam"/><br/>
-                                <p>E-mailadres <input type="text" id="emailadres"/><br/>
-                                <br>                             
-                                Schrijf hier je bericht:<br /><textarea name="bericht" cols="40" rows="8" ></textarea>
-                                <br>
-                                Toestemming: <input type="checkbox" size="30">
-                                <p>Ik ga ermee akkoord dat VISIONair mijn gegevens gebruikt om contact met mij op te nemen.</p>
-                                <input type="button" value="Verzenden" onclick="write_name()" />
+                   <div> 
+                        <div id="form">
+                            <h1>Neem contact met ons op.</h1>
+                            <form id="form1" name="form1" onsubmit="return false" >
+                                <span id=empty>
+                                <label>Voornaam</label>
+                                <input type="text" id="voornaam" placeholder="Vul hier je voornaam in"> 
+                                </span>
+                                <span>
+                                <label>Achternaam </label>
+                                <input type="text" id="achternaam" placeholder="Vul hier je achternaam in"> 
+                                </span>
+                                <span>
+                                <label>E-mailadres</label>
+                                <input type="text" id="emailadres" placeholder="Vul hier je e-mailadres in">
+                                </span>
+                                <span>
+                                <label>Telefoonnummer</label>
+                                <input type="number" id="telefoonnummer" placeholder="Vul hier je telefoonnummer in">
+                                </span>
+                                <span>                             
+                                <label>Bericht</label>
+                                <textarea name="bericht" id="bericht" placeholder="Schrijf hier je bericht" cols="80" rows="8" > </textarea>
+                                </span>
+                                <span>
+                                <label>Ik ga ermee akkoord dat VISIONair mijn gegevens gebruikt om contact met mij op te nemen.</label>
+                                </span>
+                                <input type="button" value="Versturen1" onclick="write_name()" />
                                 <input type="button" value="Reset" onclick="resetform()" />
-                                
-                        </form> 
+                                <input type="button" value="Versturen2" onclick="validate();return false;"/>
+                            
+                            </form> 
+                        </div>
                     </div>
-                  </div>
+                </div>
                 <div class="col-lg-4">
                     <div id=contactinfo>
                         <h1> Stuur een e-mail of bel.</h1>
                         <h5>Je kunt ons bellen of stuur een e-mailtje.</h5>
                         <ul id="nav">
-                                <a href="tel:0629495678"><img src="..//images/bel.png"></a>
+                                <a href="tel:0629495678"><img src="..//images/bel.png" alt="Bel ons op"></a>
                             </ul>
                             <ul id="nav">
-                                <a href="mailto:info@visionair.nl"><img src="..//images/e-mail.png"></a>
+                                <a href="mailto:info@visionair.nl"><img src="..//images/e-mail.png" alt="Stuur een e-mail"></a>
                             </ul>
                         <h1> Volg ons op social media.</h1>
                         <h5>Je kunt VISIONair óók bereiken via social media.</h5>
                         <ul id="nav">
-                                <a href="https://www.facebook.com" target=_blank><img src="..//images/Facebook.png"></a>
+                                <a href="https://www.facebook.com" target=_blank><img src="..//images/Facebook.png"  alt="Bezoek onze Facebookpagina"></a>
                             </ul>
                             <ul id="nav">
-                                <a href="https://www.instagram.com" target=_blank><img src="..//images/Instagram.png"></a>
+                                <a href="https://www.instagram.com" target=_blank><img src="..//images/Instagram.png" alt="Bezoek ons Instagramaccount"></a>
                             </ul>
                             <ul id="nav">
-                                <a href="https://www.twitter.com" target=_blank><img src="..//images/Twitter.png"></a>
+                                <a href="https://www.twitter.com" target=_blank><img src="..//images/Twitter.png" alt="Neem contact op via Twitter"></a>
                             </ul>
                             <ul id="nav">
-                                <a href="https://web.whatsapp.com"target=_blank><img src="..//images/wathsapp.png"></a>
+                                <a href="https://web.whatsapp.com"target=_blank><img src="..//images/wathsapp.png" alt="Neem contact op via Whatsapp"></a>
                             </ul>
                     </div> 
                 </div>

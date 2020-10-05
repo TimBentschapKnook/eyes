@@ -13,7 +13,7 @@ ul#nav {
     padding: 20px;
     }
 
-
+/* Opmaak contactformulier */
 form
     {
     border-width: 3px;
@@ -25,22 +25,46 @@ form
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    }
+}
 
-    form span {
-        position: relative;
-        float: left;
-        width: 100%;
-    }
+form span {
+    position: relative;
+    float: left;
+    width: 100%;
+    
+}
+/*
+form span p {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+}
+*/
 
-    form span p {
-        position: relative;
-        float: left;
-        width: 100%;
-    }
+form span label {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    
+}
 
-    form span input { 
-        position: relative;
-        float: left;
-        width: 50%;
+form span input { 
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+form span textarea {
+    margin-bottom: 15px;
+}
+
+    .confirm { 
+        color: #d8ae72;
+        font-size: 36px;
+     
     }
