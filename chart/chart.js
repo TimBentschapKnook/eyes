@@ -9,6 +9,7 @@ window.onload = function () {
             labels: ["2017", "2018", "2019", "2020"],
             datasets: [{
                 label: "Linkeroog",
+                borderColor: "rgb(99, 99, 132)",
                 data: [2, 5, 7, 5]
             },{
                 label: "Rechteroog",
