@@ -6,7 +6,7 @@ window.onload = function () {
 
         // The data for our dataset
         data: {
-            labels: ["2017", "2018", "2019", "2020"],
+            labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
             datasets: [{
                 label: "Linkeroog",
                 borderColor: "rgb(99, 99, 132)",
