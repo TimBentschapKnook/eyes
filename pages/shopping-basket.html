@@ -92,7 +92,7 @@
                                         <h3>Bril : 'Doctor of Philosophy' </h3>
                                     </div>
                                     <div class="price">
-                                        <strong>€34,49</strong>
+                                        <strong id="ItemPrice"></strong>
                                     </div>
                                     <div class="info">
                                         <h4 id="showSpecs">Product info <i id="rotate" class="fas fa-angle-down"></i></h4>
@@ -118,6 +118,18 @@
                 </div>
             </div>
         </section>
+        <section class="shipping">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-9 col-md-3">
+                        <select  class="SelectDelivery">
+                            <option value="5.69">Spoedlevering (+5,69)</option>
+                            <option check="checked" value="2.89">Reguliere levering (+2,89)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- section voor het totale prijs gedeelte-->
 
@@ -127,11 +139,11 @@
                     <div class="offset-lg-7 offset-md-7 col-md-5 col-sm-12 col-xs-12 col-12">
                         <div class="cost">
                             <h5>Kosten</h5>
-                            <p>Totaal artikelen:</p><p class="euro">€34,49</p>
-                            <p>Verzendkosten:</p><p class="euro">€5,50</p>
+                            <p>Totaal artikelen:</p><p class="euro" id="PriceItemsTotal"></p>
+                            <p>Verzendkosten:</p><p class="euro" id="SendCosts"></p>
                             <p>Korting vanuit abonnement : </p><p class="euro">Geen</p>
                             <hr>
-                            <p>Totaal:</p><p class="euro">€39,99</p>
+                            <p>Totaal:</p><p class="euro" id="PriceTotal"></p>
                             <button>Betalen</button>
                         </div>
                     </div>
@@ -153,18 +165,20 @@
                         <h3>Contact gegevens</h3>
                         <ul>
                             <li>
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-facebook-square"></i><span>@VISIONair</span>
                             </li>
                             <li>
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-twitter-square"></i><span>@VISIONair</span>
                             </li>
                             <li>
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i><span>@VISIONair</span>
                             </li>
                             <li>
-                                <i class="fab fa-facebook-square"></i>
+                                <i class="fas fa-envelope-square"></i><span>info@visionair.nl</span>
                             </li>
-
+                            <li>
+                                <i class="fas fa-phone-square"></i><span>+31 626598475</span>
+                            </li>
                         </ul>
                     </div>                  
                 </div>
@@ -181,6 +195,7 @@
         </section>
 
          <!-- link naar javascript -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <script src="../javascript/scripts.js"></script>
     </body>

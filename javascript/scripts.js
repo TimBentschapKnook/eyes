@@ -101,3 +101,29 @@ $(document).ready(function() {
 	$(window).on('scroll', onScroll);
 	
 });
+
+CalcShoppingBasket();
+shippingOnChange();
+
+	// Calculate price in shopping basket, voeg parameter toe die ervoor zorgt dat de geselecteerd verzendig gedaan kan worden
+	function CalcShoppingBasket(selectedOption){
+		var PriceOfItem = "34,49";
+		var TotalItemPrice = PriceOfItem;
+		// INLINE if, check eerst of er een optie is veranderd, doe dan de waarde die uit de onderstaande functie wordt opgehaald, anders de nu geselecteerde value
+		var SendingCost = shippingOnChange() ? selectedOption : $('.SelectDelivery').find(':selected').val();
+		// added parseFloat, omdat de variabelen string zijn maken we er een number van, zodat de totale prijs berekend kan worden
+		var TotalPrice = parseFloat(PriceOfItem) + parseFloat(SendingCost);
+		document.getElementById("ItemPrice").innerHTML = '€' + PriceOfItem;
+		document.getElementById("PriceItemsTotal").innerHTML = '€' + TotalItemPrice;
+		document.getElementById("SendCosts").innerHTML = '€' + SendingCost;
+		document.getElementById("PriceTotal").innerHTML = '€' + TotalPrice;
+	}
+	
+	// Functie voor het kijken of de verzendmogelijkheid is aangepast
+	function shippingOnChange() {
+		$('.SelectDelivery').change(function() {
+			var selectedOption = $(this).find(':selected').val();
+			CalcShoppingBasket(selectedOption);
+		});
+	}
+

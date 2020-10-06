@@ -919,7 +919,13 @@
 						color: gold;
 						font-weight: bold;
 					}
+
+
+
+					
 				}
+
+
 				.icon-holder {
 					position: absolute;
 					float: left;
@@ -933,12 +939,33 @@
 					}
 				}
 			}
+
+		}
+		&.shipping {
+			padding: 0;
+			margin: 20px 0;
+			position: relative;
+			select {
+				position: relative;
+				float: left;
+				width: 100%;
+				padding: 5px;
+				text-indent: 5px;
+				border: 1px solid @primairy-color;
+				border-radius: 5px;
+				background-color: @primairy-color;
+				color: white;
+			}
+				  
 		}
 		&.costs {
 			position: relative;
 			float: left;
 			width: 100%;
 			padding: 50px 0;
+			
+
+
 			.cost {
 				h5 {
 					color: @box;
