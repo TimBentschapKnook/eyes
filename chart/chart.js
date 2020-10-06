@@ -8,11 +8,13 @@ window.onload = function () {
         data: {
             labels: ["2017", "2018", "2019", "2020"],
             datasets: [{
-                label: "Chart.exe",
-                backgroundColor: "rgb(255, 99, 132)",
+                label: "Linkeroog",
+                data: [2, 5, 7, 5]
+            },{
+                label: "Rechteroog",
                 borderColor: "rgb(255, 99, 132)",
                 data: [0, 10, 5, 2]
-            }]
+            }],
         },
     
         // Configuration options go here
