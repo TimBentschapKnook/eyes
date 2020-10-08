@@ -2193,89 +2193,91 @@ html section.login-form,
 body section.login-form {
   padding-top: 10px ;
 }
-html section.login-form .row1,
-body section.login-form .row1 {
+html section.login-form .row-form,
+body section.login-form .row-form {
   background-color: #d8ae72;
   border-radius: 6px;
+  box-shadow: 2px 4px 8px 1px #888888;
 }
-html section.login-form .row1 .title,
-body section.login-form .row1 .title {
+html section.login-form .row-form .title,
+body section.login-form .row-form .title {
   float: left;
   padding-bottom: 40px;
   padding-left: 5;
   text-align: center;
 }
-html section.login-form .row1 .title h1,
-body section.login-form .row1 .title h1 {
-  color: white;
+html section.login-form .row-form .title h1,
+body section.login-form .row-form .title h1 {
+  color: #ffffff;
   font-size: 34px;
   padding-top: 50px;
 }
-html section.login-form .row1 form.form,
-body section.login-form .row1 form.form {
+html section.login-form .row-form form.form,
+body section.login-form .row-form form.form {
   text-align: center;
   padding-bottom: 10px;
 }
-html section.login-form .row1 form.form i.login-icon,
-body section.login-form .row1 form.form i.login-icon {
-  color: black;
+html section.login-form .row-form form.form i.login-icon,
+body section.login-form .row-form form.form i.login-icon {
+  color: #000000;
 }
-html section.login-form .row1 form.form i.login-icon:hover,
-body section.login-form .row1 form.form i.login-icon:hover {
+html section.login-form .row-form form.form i.login-icon:hover,
+body section.login-form .row-form form.form i.login-icon:hover {
   size: 80px;
 }
-html section.login-form .row1 form.form input,
-body section.login-form .row1 form.form input {
+html section.login-form .row-form form.form input,
+body section.login-form .row-form form.form input {
   border: none;
   outline: none;
   background: none;
 }
-html section.login-form .row1 form.form input.form-control,
-body section.login-form .row1 form.form input.form-control {
+html section.login-form .row-form form.form input.form-control,
+body section.login-form .row-form form.form input.form-control {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 8px;
   padding-right: 30px;
   width: 50%;
   overflow: hidden;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
-html section.login-form .row1 form.form input::placeholder,
-body section.login-form .row1 form.form input::placeholder {
-  color: black;
+html section.login-form .row-form form.form input::placeholder,
+body section.login-form .row-form form.form input::placeholder {
+  color: #000000;
 }
-html section.login-form .row1 form.form .btn1,
-body section.login-form .row1 form.form .btn1 {
+html section.login-form .row-form form.form .btn1,
+body section.login-form .row-form form.form .btn1 {
   font-weight: bold;
   border: none;
   outline: none;
   height: 40px;
   width: 200px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 4px;
   color: #d8ae72;
   margin-top: 30px;
   margin-bottom: 40px;
 }
-html section.login-form .row1 form.form .btn1:hover,
-body section.login-form .row1 form.form .btn1:hover {
+html section.login-form .row-form form.form .btn1:hover,
+body section.login-form .row-form form.form .btn1:hover {
   font-size: 17px;
   box-shadow: 2px 4px 8px 1px #888888;
 }
-html section.login-form .row1 a,
-body section.login-form .row1 a {
-  color: black;
+html section.login-form .row-form a,
+body section.login-form .row-form a {
+  color: #000000;
   text-decoration: none;
   font-size: 12px;
 }
-html section.login-form .row1 a:hover,
-body section.login-form .row1 a:hover {
-  color: white;
+html section.login-form .row-form a:hover,
+body section.login-form .row-form a:hover {
+  color: #ffffff;
   font-weight: bold;
 }
-html section.login-form .row1 p,
-body section.login-form .row1 p {
-  color: black;
+html section.login-form .row-form p,
+body section.login-form .row-form p {
+  color: #000000;
   font-size: 12px;
   margin: 0px;
+  font-weight: bold;
 }
