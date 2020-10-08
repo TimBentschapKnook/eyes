@@ -2189,45 +2189,45 @@ body {
   margin: 0;
   padding: 0;
 }
-html section.login-form,
-body section.login-form {
+html section.register-form,
+body section.register-form {
   padding-top: 10px ;
 }
-html section.login-form .row1,
-body section.login-form .row1 {
+html section.register-form .row1,
+body section.register-form .row1 {
   background-color: #d8ae72;
   border-radius: 6px;
 }
-html section.login-form .row1 .title,
-body section.login-form .row1 .title {
+html section.register-form .row1 .title,
+body section.register-form .row1 .title {
   float: left;
   padding-bottom: 40px;
   padding-left: 5;
   text-align: center;
 }
-html section.login-form .row1 .title h1,
-body section.login-form .row1 .title h1 {
+html section.register-form .row1 .title h1,
+body section.register-form .row1 .title h1 {
   color: white;
   font-size: 34px;
   padding-top: 50px;
 }
-html section.login-form .row1 form.form,
-body section.login-form .row1 form.form {
+html section.register-form .row1 form.form,
+body section.register-form .row1 form.form {
   text-align: center;
   padding-bottom: 10px;
 }
-html section.login-form .row1 form.form i.login-icon,
-body section.login-form .row1 form.form i.login-icon {
+html section.register-form .row1 form.form i.register-icon,
+body section.register-form .row1 form.form i.register-icon {
   color: black;
 }
-html section.login-form .row1 form.form input,
-body section.login-form .row1 form.form input {
+html section.register-form .row1 form.form input,
+body section.register-form .row1 form.form input {
   border: none;
   outline: none;
   background: none;
 }
-html section.login-form .row1 form.form input.form-control,
-body section.login-form .row1 form.form input.form-control {
+html section.register-form .row1 form.form input.form-control,
+body section.register-form .row1 form.form input.form-control {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 8px;
@@ -2236,12 +2236,12 @@ body section.login-form .row1 form.form input.form-control {
   overflow: hidden;
   border-bottom: 2px solid black;
 }
-html section.login-form .row1 form.form input::placeholder,
-body section.login-form .row1 form.form input::placeholder {
+html section.register-form .row1 form.form input::placeholder,
+body section.register-form .row1 form.form input::placeholder {
   color: black;
 }
-html section.login-form .row1 form.form .btn1,
-body section.login-form .row1 form.form .btn1 {
+html section.register-form .row1 form.form .btn1,
+body section.register-form .row1 form.form .btn1 {
   font-weight: bold;
   border: none;
   outline: none;
@@ -2253,24 +2253,24 @@ body section.login-form .row1 form.form .btn1 {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-html section.login-form .row1 form.form .btn1:hover,
-body section.login-form .row1 form.form .btn1:hover {
+html section.register-form .row1 form.form .btn1:hover,
+body section.register-form .row1 form.form .btn1:hover {
   font-size: 17px;
   box-shadow: 2px 4px 8px 1px #888888;
 }
-html section.login-form .row1 a,
-body section.login-form .row1 a {
+html section.register-form .row1 a,
+body section.register-form .row1 a {
   color: black;
   text-decoration: none;
   font-size: 12px;
 }
-html section.login-form .row1 a:hover,
-body section.login-form .row1 a:hover {
+html section.register-form .row1 a:hover,
+body section.register-form .row1 a:hover {
   color: white;
   font-weight: bold;
 }
-html section.login-form .row1 p,
-body section.login-form .row1 p {
+html section.register-form .row1 p,
+body section.register-form .row1 p {
   color: black;
   font-size: 12px;
   margin: 0px;
