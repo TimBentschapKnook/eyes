@@ -967,9 +967,9 @@
 			float: left;
 			width: 100%;
 			padding: 50px 0;
-			.user-data {
+			.gebruiker-gegevens {
 				h2 { 
-					color: @box;
+					color: @primairy-color;
 					margin: 5px 0;
 					padding: 0;
 					font-size: 19px;
@@ -983,15 +983,15 @@
 					padding: 0;
 				}
 			}
-			.user-orders {
+			.gebruiker-bestellingen {
 				h2 { 
-					color: @box;
+					color: @primairy-color;
 					margin: 5px 0;
 					padding: 0px 0;
 					font-size: 19px;
 				}
 				table, th, td {
-					border: 1px solid black;
+					border: 1px solid @box;
 					border-collapse: collapse;
 					th {
 						position: relative;
@@ -1011,7 +1011,7 @@
 			}
 			.bril {
 				h2 { 
-					color: @box;
+					color: @primairy-color;
 					margin: 5px 0;
 					padding: 0;
 					font-size: 19px;
@@ -1023,6 +1023,14 @@
 					font-size: 14px;
 					margin: 0;
 					padding: 0;
+				}
+			}
+			.chart {
+				h2 {
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
 				}
 			}
 		}

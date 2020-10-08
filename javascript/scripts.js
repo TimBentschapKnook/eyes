@@ -82,7 +82,19 @@ $(document).ready(function() {
 	onScroll();
 	$(window).on('scroll', onScroll);
 
-	var aanschaf_bril = "20-21-2020";
-	document.getElementById("aanschaf_bril").innerHTML = aanschaf_bril;
+    var gebruikersnaam = "Jan Klaasen";
+    var geboortedatum = "01-01-1999";
+    var adres = "Hendriksstraat 1"
+    var woonplaats = "Sint-Johannes";
+    var mailadres = "Voorbeeld@test.nl";
 
+    var abonnement = "Goud";
+    var aanschaf_bril = "20-10-2020";
+
+	var array1=["gebruikersnaam", "geboortedatum", "adres", "woonplaats", "mailadres", "abonnement", "aanschaf_bril"];
+	var array2=[gebruikersnaam, geboortedatum, adres, woonplaats, mailadres, abonnement, aanschaf_bril];
+
+    for (i = 0; i < array1.length; i++) {
+		document.getElementById(array1[i]).innerHTML = array2[i];
+	}
 });
