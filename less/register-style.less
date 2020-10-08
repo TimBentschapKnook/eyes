@@ -21,13 +21,14 @@
     line-height: 30px;
     max-width: 100%;
     margin: 0;
-	padding: 0;
+    padding: 0;
     section{
 		&.register-form{
-			padding-top:10px ;
-			.row1{
-				background-color: #d8ae72;
-				border-radius: 6px;
+            padding-top:10px ;
+			.row-form{
+				background-color: @primairy-color;
+                border-radius: 6px;
+                box-shadow: 2px 4px 8px 1px #888888;
 				.title{
 					float: left;
 					padding-bottom: 40px;
@@ -45,7 +46,7 @@
 						padding-bottom: 10px;
 						i{
 							&.register-icon{
-								color:black;
+								color: @text-color;
 							}
 						}
 						input{
@@ -59,10 +60,10 @@
 								padding-right: 30px;
 								width: 50%;
 								overflow: hidden;
-								border-bottom: 2px solid black;
+								border-bottom: 2px solid @text-color;
 							}
 							&::placeholder{
-								color: black;
+								color: @text-color;
 							}
 						}
 						.btn1{
@@ -84,7 +85,7 @@
 					}
 				}
 				a{
-					color: black;
+					color: @text-color;
 					text-decoration: none;
 					font-size: 12px;
 					&:hover{
@@ -93,7 +94,8 @@
 					}
 				}
 				p{
-					color: black;
+                    color: @text-color;
+                    font-weight: bold;
 					font-size: 12px;
 					margin: 0px;
 				}

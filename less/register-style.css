@@ -2193,55 +2193,56 @@ html section.register-form,
 body section.register-form {
   padding-top: 10px ;
 }
-html section.register-form .row1,
-body section.register-form .row1 {
+html section.register-form .row-form,
+body section.register-form .row-form {
   background-color: #d8ae72;
   border-radius: 6px;
+  box-shadow: 2px 4px 8px 1px #888888;
 }
-html section.register-form .row1 .title,
-body section.register-form .row1 .title {
+html section.register-form .row-form .title,
+body section.register-form .row-form .title {
   float: left;
   padding-bottom: 40px;
   padding-left: 5;
   text-align: center;
 }
-html section.register-form .row1 .title h1,
-body section.register-form .row1 .title h1 {
+html section.register-form .row-form .title h1,
+body section.register-form .row-form .title h1 {
   color: white;
   font-size: 34px;
   padding-top: 50px;
 }
-html section.register-form .row1 form.form,
-body section.register-form .row1 form.form {
+html section.register-form .row-form form.form,
+body section.register-form .row-form form.form {
   text-align: center;
   padding-bottom: 10px;
 }
-html section.register-form .row1 form.form i.register-icon,
-body section.register-form .row1 form.form i.register-icon {
-  color: black;
+html section.register-form .row-form form.form i.register-icon,
+body section.register-form .row-form form.form i.register-icon {
+  color: #000000;
 }
-html section.register-form .row1 form.form input,
-body section.register-form .row1 form.form input {
+html section.register-form .row-form form.form input,
+body section.register-form .row-form form.form input {
   border: none;
   outline: none;
   background: none;
 }
-html section.register-form .row1 form.form input.form-control,
-body section.register-form .row1 form.form input.form-control {
+html section.register-form .row-form form.form input.form-control,
+body section.register-form .row-form form.form input.form-control {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 8px;
   padding-right: 30px;
   width: 50%;
   overflow: hidden;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #000000;
 }
-html section.register-form .row1 form.form input::placeholder,
-body section.register-form .row1 form.form input::placeholder {
-  color: black;
+html section.register-form .row-form form.form input::placeholder,
+body section.register-form .row-form form.form input::placeholder {
+  color: #000000;
 }
-html section.register-form .row1 form.form .btn1,
-body section.register-form .row1 form.form .btn1 {
+html section.register-form .row-form form.form .btn1,
+body section.register-form .row-form form.form .btn1 {
   font-weight: bold;
   border: none;
   outline: none;
@@ -2253,25 +2254,26 @@ body section.register-form .row1 form.form .btn1 {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-html section.register-form .row1 form.form .btn1:hover,
-body section.register-form .row1 form.form .btn1:hover {
+html section.register-form .row-form form.form .btn1:hover,
+body section.register-form .row-form form.form .btn1:hover {
   font-size: 17px;
   box-shadow: 2px 4px 8px 1px #888888;
 }
-html section.register-form .row1 a,
-body section.register-form .row1 a {
-  color: black;
+html section.register-form .row-form a,
+body section.register-form .row-form a {
+  color: #000000;
   text-decoration: none;
   font-size: 12px;
 }
-html section.register-form .row1 a:hover,
-body section.register-form .row1 a:hover {
+html section.register-form .row-form a:hover,
+body section.register-form .row-form a:hover {
   color: white;
   font-weight: bold;
 }
-html section.register-form .row1 p,
-body section.register-form .row1 p {
-  color: black;
+html section.register-form .row-form p,
+body section.register-form .row-form p {
+  color: #000000;
+  font-weight: bold;
   font-size: 12px;
   margin: 0px;
 }
