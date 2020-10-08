@@ -81,5 +81,8 @@ $(document).ready(function() {
 	}
 	onScroll();
 	$(window).on('scroll', onScroll);
-	
+
+	var aanschaf_bril = "20-21-2020";
+	document.getElementById("aanschaf_bril").innerHTML = aanschaf_bril;
+
 });

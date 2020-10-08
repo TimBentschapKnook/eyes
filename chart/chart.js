@@ -10,11 +10,11 @@ window.onload = function () {
             datasets: [{
                 label: "Linkeroog",
                 borderColor: "rgb(99, 99, 132)",
-                data: [2, 5, 7, 5]
+                data: [2, 5, 7, 5, 3, 8]
             },{
                 label: "Rechteroog",
                 borderColor: "rgb(255, 99, 132)",
-                data: [0, 10, 5, 2]
+                data: [0, 10, 5, 2, 4, 6]
             }],
         },
     
