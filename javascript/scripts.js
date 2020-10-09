@@ -99,3 +99,26 @@ $(document).ready(function() {
 	}
 
 });
+
+// Ophalen van bepaalde elementen
+var gborder = document.getElementById("gegevens-border");
+var bborder = document.getElementById("bestellingen-border");
+var pborder = document.getElementById("product-border");
+var cborder = document.getElementById("chart-border");
+
+// Als het formaat wijzigd dan
+$(window).resize(function() {
+	// Als het formaat wijzigd en het is kleiner dan 768
+	if ($(window).width() < 768) {
+		// Border style van het element wordt aangepast
+		gborder.style.borderStyle = "solid solid none solid";
+		bborder.style.borderStyle = "solid solid none solid";
+		pborder.style.borderStyle = "solid solid none solid";
+		cborder.style.borderStyle = "solid solid solid solid";
+	} else {
+		gborder.style.borderStyle = "none solid solid none";
+		bborder.style.borderStyle = "none none solid solid";
+		pborder.style.borderStyle = "solid solid none none";
+		cborder.style.borderStyle = "solid none none solid";
+	}
+});
