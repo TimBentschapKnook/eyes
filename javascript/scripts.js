@@ -88,7 +88,7 @@ $(document).ready(function() {
     var woonplaats = "Sint-Johannes";
     var mailadres = "Voorbeeld@test.nl";
 
-    var abonnement = "Goud";
+    var abonnement = "Gold";
     var aanschaf_bril = "20-10-2020";
 
 	var array1=["gebruikersnaam", "geboortedatum", "adres", "woonplaats", "mailadres", "abonnement", "aanschaf_bril"];
@@ -97,4 +97,5 @@ $(document).ready(function() {
     for (i = 0; i < array1.length; i++) {
 		document.getElementById(array1[i]).innerHTML = array2[i];
 	}
+
 });

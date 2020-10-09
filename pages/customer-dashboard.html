@@ -29,8 +29,7 @@
                                <ul>
                                    <li><a href="../index.html">Home</a></li>
                                    <li><a href="./customer-dashboard.html">Dashboard</a></li>
-                                   <li><a href="#mijn-gegevens">Mijn gegevens</a></li>
-                                   <li><a href="#mijn-bestellingen">Mijn bestellingen</a></li>
+                                   <li><a href="#">Gegevens wijzigen</a></li>
                                </ul>
                                <ul>
                                    <li><a href="#">Uitloggen</a></li>
@@ -63,7 +62,7 @@
                 <!-- Defineer een row -->
                 <div class="row">
                     <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-lg-4 col-md-4 col-md-4 col-sm-12 col-xs-12 col-12">
+                    <div id="gegevens-border" class="col-lg-4 col-md-4 col-md-4 col-sm-12 col-xs-12 col-12">
                         <!-- Class gedefineerd -->
                         <div class="gebruiker-gegevens">
                             <!-- Wat code -->
@@ -76,7 +75,7 @@
                         </div>
                     </div>
                     <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-lg-8 col-md-8 col-md-8 col-sm-12 col-xs-12 col-12">
+                    <div id="bestellingen-border" class="col-lg-8 col-md-8 col-md-8 col-sm-12 col-xs-12 col-12">
                         <!-- Class gedefineerd -->
                         <div class="gebruiker-bestellingen">
                             <!-- Wat code -->
@@ -132,17 +131,17 @@
                         </div>
                     </div>
                     <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-lg-5 col-md-5 col-md-5 col-sm-12 col-xs-12 col-12">
+                    <div id="product-border" class="col-lg-5 col-md-5 col-md-5 col-sm-12 col-xs-12 col-12">
                         <!-- Class gedefineerd -->
-                        <div class="bril">
+                        <div class="product">
                             <!-- Wat code -->
-                            <h2>Bril</h2>
-                            <p>Abonnementsvorm:</p><p id="abonnement">U heeft geen abonnement afgesloten.</p>
+                            <h2>Product</h2>
+                            <p>Abonnementsvorm:</p><b><p id="abonnement" style="color: gold;">U heeft geen abonnement afgesloten.</p></b>
                             <p>Aanschaf bril:</p><p id=aanschaf_bril>U heeft geen bril aangeschaft.</p>                                                     
                         </div>
                     </div>
                     <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-lg-7 col-md-7 col-md-7 col-sm-12 col-xs-12 col-12">
+                    <div id="chart-border" class="col-lg-7 col-md-7 col-md-7 col-sm-12 col-xs-12 col-12">
                         <!-- Class gedefineerd -->
                         <div class="chart">
                             <!-- Wat code -->
@@ -154,45 +153,10 @@
                             </div>
                         </div>
                     </div>
+                    <div id="map"></div>
                 </div>
             </div>
         </section>
-        <footer>
-            <!-- Container is nodig voor bootstrap, krijg je een standaard padding om je data -->
-            <div class="container">
-                <!-- Defineer een row -->
-                <div class="row">
-                    <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-md-6">
-                        <!-- Wat code -->
-                        <h3>H3 title</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                    </div>
-                    <!-- Een offset van 2 geven aan het element in de div -->
-                    <div class="offset-2"></div>
-                    <!-- De colom breedte voor deze elementen per scherm grote -->
-                    <div class="col-md-4">
-                        <!-- Wat code -->
-                        <h3>Contact gegevens</h3>
-                        <ul>
-                            <li>
-                                <i class="fab fa-facebook-square"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-facebook-square"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-facebook-square"></i>
-                            </li>
-                            <li>
-                                <i class="fab fa-facebook-square"></i>
-                            </li>
-
-                        </ul>
-                    </div>                  
-                </div>
-            </div>
-        </footer>
         <section class="copyright">
             <div class="container">
                 <div class="row">
