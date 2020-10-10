@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+td {
+    border: 1px solid;
+}
+
+.filterDiv {
+    float: left;
+    background-color: #d8ae72;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: left;
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+
+/* Button style*/
+
+.button {
+    border: none;
+    padding: 10px 15px;
+    background-color: #d8ae72;
+    text-align: left;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #bd955d;
+}
+
+.button.active {
+    background-color: #d8ae72;
+    border: grey;
+    color: white;
+}
