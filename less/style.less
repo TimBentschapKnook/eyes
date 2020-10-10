@@ -968,32 +968,11 @@
 			width: 100%;
 			padding: 50px 0;
 
-			#gegevens-border {
+			#gegevens-border, #bestellingen-border, #product-border, #chart-border {
 				border: 2px @primairy-color;
-				border-style: none solid solid none;
+				border-style: solid solid solid solid;
 				padding-right: 20px;
 				padding-bottom: 10px;
-			}
-
-			#bestellingen-border {
-				border: 2px @primairy-color;
-				border-style: none none solid solid;
-				padding-left: 20px;
-				padding-bottom: 10px;
-			}
-
-			#product-border {
-				border: 2px @primairy-color;
-				border-style: solid solid none none;
-				padding-right: 20px;
-				padding-top: 10px;
-			}
-			
-			#chart-border {
-				border: 2px @primairy-color;
-				border-style: solid none none solid;
-				padding-left: 20px;
-				padding-top: 10px;
 			}
 
 			.gebruiker-gegevens {
@@ -1060,6 +1039,41 @@
 					margin: 5px 0;
 					padding: 0;
 					font-size: 19px;
+				}
+			}
+		}
+		&.dashboard-userdata {
+			position: relative;
+			float: left;
+			width: 100%;
+			padding: 50px 0;
+
+			#gegevens-border {
+				border: 2px @primairy-color;
+				border-style: solid solid solid solid;
+				padding-right: 20px;
+				padding-bottom: 10px;
+			}
+
+			.gebruiker-gegevens-aanpassen {
+				h2 { 
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				label, input {
+					position: relative;
+					float: left;
+					height: 28px;
+					width: 50%;
+					font-size: 14px;
+					margin: 1px 0;
+					padding: 0;
+				}
+				#submit-button {
+					width: 100%;
+					margin-top: 5px;
 				}
 			}
 		}
