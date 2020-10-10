@@ -47,7 +47,7 @@ $(document).ready(function() {
 		const scrollPos = $(window).scrollTop();
 
 		if ($('header').length > 0) {
-			const scrollHeight = $('header').height();
+			const scrollHeight = $('header:not(.not-100vh)').height();
 			let scrollTo = scrollHeight;
 
 			if (scrollPos < scrollHeight) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
 	});
 
 	function onScroll() {
-		const menu = $('.menu');
+		const menu = $('header:not(.not-100vh) .menu');
 		const top = $(window).scrollTop();
 
 		if (top > 300) {
@@ -90,7 +90,31 @@ $(document).ready(function() {
 
 
 	}
+
+	function onScrollNot100VH() {
+		const menu = $('header.not-100vh .menu');
+		const top = $(window).scrollTop();
+		const clearfix = $('.menu-fix');
+
+		if (top > 300) {
+			menu.addClass('visible');
+		} else {
+			menu.removeClass('visible');
+		}
+
+		if (top > 200) {
+			menu.addClass('fixed');
+			clearfix.addClass('fixed');
+		} else {
+			menu.removeClass('fixed');
+			clearfix.removeClass('fixed');
+		}
+	}
+
 	onScroll();
+	onScrollNot100VH();
+
 	$(window).on('scroll', onScroll);
+	$(window).on('scroll', onScrollNot100VH);
 	
 });
