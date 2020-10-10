@@ -89,98 +89,115 @@
     <section class="producttable">
         <div class="container">
             <div class="row">
-                <!-- Filter Kolom Links-->
-                <div class="col-3">
-                    <div id="FilterButtons">
+                <div class="col-md-2">
+                    <div id="filtergroep">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
                         <h4>Geslacht</h4>
-                        <button class="Button active" onclick="filterSelection('Dames')">Dames</button>
-                        <button class="Button active" onclick="filterSelection('Heren')">Heren</button>
-                        <br>
+                        <button class="btn" onclick="filterSelection('dames')"> Dames</button>
+                        <button class="btn" onclick="filterSelection('heren')"> Heren</button>
                         <h4>Type</h4>
-                        <button class="Button active" onclick="filterSelection('Brillen')">Brillen</button>
-                        <button class="Button active" onclick="filterSelection('Merkbrillen')">Merkbrillen</button>
-                        <button class="Button active" onclick="filterSelection('Zonnebrillen')">Zonnebrillen</button>
-                        <br>
-                        <h4>Merken</h4>
-                        <button class="Button active" onclick="filterSelection('Merk1')">Merk1</button>
-                        <button class="Button active" onclick="filterSelection('Merk2')">Merk2</button>
-                        <br>
-                        <h4>Prijs</h4>
-                        <button class="Button active" onclick="filterSelection('Prijstot50')">Prijs tot €50</button>
-                        <button class="Button active" onclick="filterSelection('Prijs50tot75')">Prijs €50 tot €75</button>
-                        <button class="Button active" onclick="filterSelection('Prijs75tot100')">Prijs €75 tot €100</button>
-                        <br>
+                        <button class="btn" onclick="filterSelection('bril')"> Brillen</button>
+                        <button class="btn" onclick="filterSelection('merkbril')"> Merkbrillen</button>
+                        <button class="btn" onclick="filterSelection('zonnebril')"> Zonnebrillen</button>
                         <h4>Kleur</h4>
-                        <button class="Button active" onclick="filterSelection('KleurRood')">Rood</button>
-                        <button class="Button active" onclick="filterSelection('KleurBlauw')">Blauw</button>
-                        <button class="Button active" onclick="filterSelection('KleurZwart')">Zwart</button>
+                        <button class="btn" onclick="filterSelection('kleurrood')"> Rood</button>
+                        <button class="btn" onclick="filterSelection('kleurblauw')"> Blauw</button>
+                        <button class="btn" onclick="filterSelection('kleurgroen')"> Groen</button>
+                        <button class="btn" onclick="filterSelection('kleurbruin')"> Bruin</button>
+                        <button class="btn" onclick="filterSelection('kleurgrijs')"> Grijs</button>
+                        <button class="btn" onclick="filterSelection('kleurzwart')"> Zwart</button>
+                        <h4>Prijscategorie</h4>
+                        <button class="btn" onclick="filterSelection('prijstot50')"> Prijs tot 50</button>
+                        <button class="btn" onclick="filterSelection('prijs50tot75')"> Prijs 50 tot 75</button>
+                        <button class="btn" onclick="filterSelection('prijs75tot100')"> Prijs 75 tot 100</button>
+                        <button class="btn" onclick="filterSelection('prijs100tot125')"> Prijs 100 tot 125</button>
+                        <button class="btn" onclick="filterSelection('prijs125tot150')"> Prijs 125 tot 150</button>
                     </div>
                 </div>
+                <div class="offset-md-1"></div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijs75tot100">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 80</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijs100tot125">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 105</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijstot50">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Product Kolom Rechts-->
-                <div class="offset-1"></div>
-                <div class="col-md-8">
-                    <table width="100%">
-                        <tr>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 1 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 2 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 3 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 4 <br><b>€€€</b></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 5 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="../images/bril1.jpg" alt="" width="75%">
-                                <p>Product 6 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="" alt="">
-                                <p>Product 7 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="" alt="">
-                                <p>Product 8 <br><b>€€€</b></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="" alt="">
-                                <p>Product 9 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="" alt=""><br>
-                                <p>Product 10 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="" alt="">
-                                <p>Product 11 <br><b>€€€</b></p>
-                            </td>
-                            <td>
-                                <img src="" alt="">
-                                <p>Product 12 <br><b>€€€</b></p>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijs50tot75">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 70</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijs125tot150">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 145</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="product" class="filterDiv dames prijs100tot125">
+                                <div class="image">
+                                    <img src="../images/bril1.jpg" alt="bril">
+                                </div>
+                                <div class="info">
+                                    <span class="productName">Productnaam</span>
+                                    <a class="look" href="#">BEKIJK</a>
+                                    <p class="prijs">€ 110</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="clearfix"></section>
 
 
 
@@ -228,7 +245,8 @@
             </div>
         </div>
     </section>
-    <script src="./javascript/scripts.js"></script>
+    <script src="../javascript/scripts.js"></script>
+    <script src="../javascript/filterProducts.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </body>
