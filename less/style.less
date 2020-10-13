@@ -25,6 +25,7 @@
     max-width: 100%;
     margin: 0;
 	padding: 0;
+	overflow-x: hidden;
     header {
         position: relative;
         float: left;
@@ -829,6 +830,7 @@
 			background-color: @primairy-color;
 			color: @white;
 		}
+		// opmaak section shoppingbasket
 		&.basket-item {
 			border: 0;
 			.item {
@@ -907,7 +909,23 @@
 							display: block;
 						}
 					}
+
+					.beschikbaarheid {
+						color: green;
+						font-weight: bold;
+					}
+
+					.prijsklasse {
+						color: gold;
+						font-weight: bold;
+					}
+
+
+
+					
 				}
+
+
 				.icon-holder {
 					position: absolute;
 					float: left;
@@ -921,12 +939,33 @@
 					}
 				}
 			}
+
+		}
+		&.shipping {
+			padding: 0;
+			margin: 20px 0;
+			position: relative;
+			select {
+				position: relative;
+				float: left;
+				width: 100%;
+				padding: 5px;
+				text-indent: 5px;
+				border: 1px solid @primairy-color;
+				border-radius: 5px;
+				background-color: @primairy-color;
+				color: white;
+			}
+				  
 		}
 		&.costs {
 			position: relative;
 			float: left;
 			width: 100%;
 			padding: 50px 0;
+			
+
+
 			.cost {
 				h5 {
 					color: @box;
@@ -963,6 +1002,8 @@
 			
 			}
 		}
+
+		//opmaak Over ons tekst
 		&.OveronsTekst {
 			position: relative;
 			float: left;
@@ -980,8 +1021,9 @@
 			
 		}
 
-	
+		// css opmaak voor de about us section
 		&.AboutUs {
+			// opmaak slideshow 
 			.cycle-slideshow {
 				.image {
 					position: relative;
@@ -990,18 +1032,14 @@
 					height: 400px;
 					border: 10px solid @primairy-color;
 					border-radius: 100%;
-					// overflow: hidden;x 
 					img {
 						position: relative;
 						float: left;
 						width: 100%;
 						height: 100%;
 						border-radius: 100%;
-						filter: blur(4px);
-						-webkit-filter: blur(4px);
-
-
 					}
+					//opmaak rand van img
 					.overlay {
 						position: absolute;
 						top: 0;
@@ -1011,37 +1049,12 @@
 						width: 100%;
 						height: 100%;
 						background-color: @box;
-						opacity: .6;
+						opacity: .4;
 						border-radius: 100%;
 						z-index: 8;
-
-						&:hover{
-							opacity: 0;
-						}
-					}
-					&::before {
-						position: absolute;
-						top: 0;
-						left: 0;
-						width: 100%;
-						height: 100%;
-						background: rgba(255, 255,255,0.5);
-						content: '';
-						transition: transform 0.6s;
-						transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
-					}
-					&:hover {
-						img {
-							transform: scale3d(1,1,1);
-							filter: blur(0px);
-							-webkit-filter: blur(0px);
-
-						}
-						&::before {
-							transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
-						}
 					}
 				}
+				// opmaakt text van slideshow
 				p {
 					float: left;
 					position: relative;
@@ -1049,6 +1062,7 @@
 					height: auto;
 
 				}
+				// opmaak h3 kop
 				h3 {
 					float: left;
 					position: relative;
@@ -1057,6 +1071,8 @@
 					color: @primairy-color;
 				}
 			}
+
+			//opmaak knoppen van slideshow
 
 			#prev {
 				position: relative;
@@ -1083,6 +1099,70 @@
 			} 
 		}
 		
+		&.dashboard {
+			position: relative;
+			float: left;
+			width: 100%;
+			padding: 50px 0;
+			.user-data {
+				h2 { 
+					color: @box;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				p {
+					position: relative;
+    				float: left;
+					width: 50%;
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.user-orders {
+				h2 { 
+					color: @box;
+					margin: 5px 0;
+					padding: 0px 0;
+					font-size: 19px;
+				}
+				table, th, td {
+					border: 1px solid black;
+					border-collapse: collapse;
+					th {
+						position: relative;
+						width: auto;
+						font-size: 16px;
+						margin-right: 50px;
+						padding-left: 5px;
+					}
+					td {
+						position: relative;
+						width: auto;
+						font-size: 14px;
+						margin-right: 50px;
+						padding-left: 5px;
+					}
+				}
+			}
+			.bril {
+				h2 { 
+					color: @box;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				p {
+					position: relative;
+    				float: left;
+					width: 50%;
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
 	}
 	footer {
 		padding: 20px 0;

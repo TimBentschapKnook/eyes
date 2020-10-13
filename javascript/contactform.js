@@ -1,20 +1,21 @@
-//versturen contactformulier
-function write_name() {
+//versturen contactformulier 
+/*function write_name() {
     var lblwrite_name = document.getElementById('form');
     var txtfirstname = document.getElementById('voornaam');
     var txtlastname = document.getElementById('achternaam');
        
     lblwrite_name.innerHTML =  "<span class=confirm> Bedankt voor je bericht! We nemen z.s.m. contact met je op " + txtfirstname.value + " " + txtlastname.value + "</span>"; 
 
-}
+} 
+*/
 
 //Reset contactformulier
 function resetform() {
-    var txtfirstname = document.getElementById('voornaam');
-    var txtlastname = document.getElementById('achternaam');
-    var txtemailadres = document.getElementById('emailadres');
-    var txttelefoonnummer = document.getElementById('telefoonnummer')
-    var txtbericht = document.getElementById('bericht')
+    var txtfirstname = document.getElementById('firstName');
+    var txtlastname = document.getElementById('lastName');
+    var txtemailadres = document.getElementById('emailAdress');
+    var txttelefoonnummer = document.getElementById('phoneNumber')
+    var txtbericht = document.getElementById('messageForm')
 
     txtfirstname.value = "";
     txtlastname.value = "";
@@ -41,7 +42,7 @@ function validate() {
     }
 
     // Kijk of er in het emailadres een @ zich bevindt
-    if(document.getElementById('emailadres').value.indexOf('@') == -1) {
+    if(document.getElementById('emailAdress').value.indexOf('@') == -1) {
         alert('Er is geen @ in email gebruikt')
         hasError = true;
     }
@@ -49,16 +50,11 @@ function validate() {
     // Als er geen errors aanwezig zijn 
     if(!hasError) {
         var lblwrite_name = document.getElementById('form');
-        var txtfirstname = document.getElementById('voornaam');
-        var txtlastname = document.getElementById('achternaam');
+        var txtfirstname = document.getElementById('firstName');
+        var txtlastname = document.getElementById('lastName');
 
         lblwrite_name.innerHTML =  "<span class=confirm> Bedankt voor je bericht! We nemen z.s.m. contact met je op " + txtfirstname.value + " " + txtlastname.value + "</span>"; 
         document.querySelector('form1').submit();
     }
     
 }
-
-
-    
-
-

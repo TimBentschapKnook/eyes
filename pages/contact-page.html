@@ -70,30 +70,31 @@
                             <form id="form1" name="form1" onsubmit="return false" >
                                 <span id=empty>
                                 <label>Voornaam</label>
-                                <input type="text" id="voornaam" placeholder="Vul hier je voornaam in"> 
+                                <input type="text" id="firstName" placeholder="Vul hier je voornaam in"> 
                                 </span>
                                 <span>
                                 <label>Achternaam </label>
-                                <input type="text" id="achternaam" placeholder="Vul hier je achternaam in"> 
+                                <input type="text" id="lastName" placeholder="Vul hier je achternaam in"> 
                                 </span>
                                 <span>
                                 <label>E-mailadres</label>
-                                <input type="text" id="emailadres" placeholder="Vul hier je e-mailadres in">
+                                <input type="text" id="emailAdress" placeholder="Vul hier je e-mailadres in">
                                 </span>
                                 <span>
                                 <label>Telefoonnummer</label>
-                                <input type="number" id="telefoonnummer" placeholder="Vul hier je telefoonnummer in">
+                                <input type="number" id="phoneNumber" placeholder="Vul hier je telefoonnummer in">
                                 </span>
                                 <span>                             
                                 <label>Bericht</label>
-                                <textarea name="bericht" id="bericht" placeholder="Schrijf hier je bericht" cols="80" rows="8" > </textarea>
+                                <textarea name="bericht" id="messageForm" placeholder="Schrijf hier je bericht" cols="80" rows="8" > </textarea>
                                 </span>
                                 <span>
                                 <label>Ik ga ermee akkoord dat VISIONair mijn gegevens gebruikt om contact met mij op te nemen.</label>
                                 </span>
-                                <input type="button" value="Versturen1" onclick="write_name()" />
+                                <!--<input type="button" value="Versturen1" onclick="write_name()" /> -->
+                                <input type="button" value="Versturen" onclick="validate();return false;"/>
                                 <input type="button" value="Reset" onclick="resetform()" />
-                                <input type="button" value="Versturen2" onclick="validate();return false;"/>
+                                
                             
                             </form> 
                         </div>
@@ -109,6 +110,8 @@
                             <ul id="nav">
                                 <a href="mailto:info@visionair.nl"><img src="..//images/e-mail.png" alt="Stuur een e-mail"></a>
                             </ul>
+                        <br>
+                        <br>
                         <h1> Volg ons op social media.</h1>
                         <h5>Je kunt VISIONair óók bereiken via social media.</h5>
                         <ul id="nav">
