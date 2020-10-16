@@ -1427,6 +1427,78 @@
 				cursor: pointer; 				
 			} 
 		}
+		&.price {
+			position: relative;
+			float: left;
+			width: 100%;
+			.column {
+				position: relative;
+				float: left;
+				width: 100%;
+				background-color: @white;
+				padding: 20px 0;
+				.header {
+					position: relative;
+					float: left;
+					width: 100%;
+					font-family: @elsie;
+					font-size: 20px;
+					color: @primairy-color;
+					border-bottom: 3px solid @primairy-color;
+					h4 {
+						padding: 0;
+						margin: 0;
+					}
+				}
+				ul {
+					margin: 0;
+					padding: 10px;
+					li {
+						position: relative;
+						float: left;
+						width: 100%;
+						margin: 10px 0;
+						list-style-type: none;
+						font-weight: 500;
+						&::before {
+							font-family: "Font Awesome 5 Free"; 
+							font-weight: 600; 
+							content: "\f00c";
+							color: @box;
+							margin-right: 10px;
+						}
+					}
+				}
+				.bottom {
+					position: relative;
+					float: left;
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					padding: 0;
+					.price {
+						color: @primairy-color;
+						font-weight: 600;
+						float: left;
+						width: 50%;
+					}
+					button {
+						position: relative;
+						float: left;
+						width: 50%;
+						padding: 10px 20px;
+						margin: 16px 0;
+						background-color: @box;
+						color: @white;
+						border: 1px solid @box;
+						&:hover {
+							background-color: @white;
+							color: @box;
+						}
+					}
+				}
+			}
+		}
 	}
 	footer {
 		border-top: 1px solid @box;
