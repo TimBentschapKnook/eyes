@@ -72,6 +72,14 @@ h4 {
     background-color: #a3b8bd;
 }
 
+#nameandprice {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+}
+
 .image {
     position: relative;
     float: left;
