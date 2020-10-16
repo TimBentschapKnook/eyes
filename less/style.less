@@ -1707,6 +1707,121 @@
 				}
 			}
 		}
+		&.dashboard-userdata {
+			position: relative;
+			float: left;
+			width: 100%;
+			padding: 50px 0;
+
+			#gegevens-border {
+				border: 2px @primairy-color;
+				border-style: solid solid solid solid;
+				padding-right: 20px;
+				padding-bottom: 10px;
+			}
+
+			.gebruiker-gegevens-aanpassen {
+				h2 { 
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				label, input {
+					position: relative;
+					float: left;
+					height: 28px;
+					width: 50%;
+					font-size: 14px;
+					margin: 1px 0;
+					padding: 0;
+				}
+				#submit-button {
+					width: 100%;
+					margin-top: 5px;
+				}
+			}
+		}
+		&.dashboard {
+			position: relative;
+			float: left;
+			width: 100%;
+			padding: 50px 0;
+
+			#gegevens-border, #bestellingen-border, #product-border, #chart-border {
+				border: 2px @primairy-color;
+				border-style: solid solid solid solid;
+				padding-right: 20px;
+				padding-bottom: 10px;
+			}
+
+			.gebruiker-gegevens {
+				h2 { 
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				p {
+					position: relative;
+    				float: left;
+					width: 50%;
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.gebruiker-bestellingen {
+				h2 { 
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0px 0;
+					font-size: 19px;
+				}
+				table, th, td {
+					border: 1px solid @box;
+					border-collapse: collapse;
+					th {
+						position: relative;
+						width: auto;
+						font-size: 16px;
+						margin-right: 50px;
+						padding-left: 5px;
+					}
+					td {
+						position: relative;
+						width: auto;
+						font-size: 14px;
+						margin-right: 50px;
+						padding-left: 5px;
+					}
+				}
+			}
+			.product {
+				h2 { 
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+				p {
+					position: relative;
+    				float: left;
+					width: 50%;
+					font-size: 14px;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.chart {
+				h2 {
+					color: @primairy-color;
+					margin: 5px 0;
+					padding: 0;
+					font-size: 19px;
+				}
+			}
+		}
 	}
 	footer {
 		border-top: 1px solid @box;
