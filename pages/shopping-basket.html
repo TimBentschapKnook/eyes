@@ -5,58 +5,59 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css"/>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="../javascript/jquery.js"></script>
     </head>
     <body>
         <header class="not-100vh">
             <section class="menu">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
-                            <div class="logo">
-                                 <p>VISIONair</p>
+               <div class="container">
+                   <div class="row">
+                       <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
+                           <div class="logo">
+                                <p>VISIONair</p>
+                           </div>
+                       </div>
+                       <div class="col-lg-10 hidden-md hidden-sm hidden-xs">
+                           <nav>
+                               <ul>
+                                   <li><a href="../index.html">Home</a></li>
+                                   <li><a href="">Onze producten</a></li>
+                                   <li><a href="">Over ons</a></li>
+                                   <li><a href="">Prijzen</a></li>
+                                   <li><a href="">Contact</a></li>
+                               </ul>
+                               <ul>
+                                   <li><a href="#">Inloggen</a></li>
+                                   <li><a href="#">Registreren</a></li>
+                                   <li><a href="/">
+                                   <li><a href="./pages/shopping-basket.html">
+                                        <div class="shopping-cart">
+                                            <div class="amount">2</div>
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </div>
+                                   </a></li>
+                               </ul>
+                           </nav>
+                       </div>
+                        <div class="hidden-lg col-md-6 col-sm-6 col-xs-6 col-6">
+                            <div class="nav-icon-holder">
+                                <div class="nav-icon">
+                                    <div id="hamburger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div id="cross">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-10 hidden-md hidden-sm hidden-xs">
-                            <nav>
-                                <ul>
-                                    <li><a href="../index.html">Home</a></li>
-                                    <li><a href="">Onze producten</a></li>
-                                    <li><a href="./about-us-page.html">Over ons</a></li>
-                                    <li><a href="">Prijzen</a></li>
-                                    <li><a href="">Contact</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a href="#">Inloggen</a></li>
-                                    <li><a href="#">Registreren</a></li>
-                                    <li><a href="./shopping-basket.html">
-                                         <div class="shopping-cart">
-                                             <div class="amount">2</div>
-                                             <i class="fas fa-shopping-cart"></i>
-                                         </div>
-                                    </a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                         <div class="hidden-lg col-md-6 col-sm-6 col-xs-6 col-6">
-                             <div class="nav-icon-holder">
-                                 <div class="nav-icon">
-                                     <div id="hamburger">
-                                         <span></span>
-                                         <span></span>
-                                         <span></span>
-                                     </div>
-                                     <div id="cross">
-                                         <span></span>
-                                         <span></span>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-             </section>
-             <section class="side-nav">
+                   </div>
+               </div>
+            </section>
+            <section class="side-nav">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -97,7 +98,9 @@
                 </div>
             </section>
         </header>
-        <section class="clearfix"></section>
+
+        <!-- heading met h1 tekst-->
+
         <section class="heading">
             <div class="container">
                 <div class="row">
@@ -107,6 +110,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- inhoud winkelmandje, plaatje en product info-->
         <section class="basket-item">
             <div class="container">
                 <div class="row">
@@ -115,26 +120,26 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-3 hidden-xs hidden-col">
                                     <div class="image">
-                                        <img src="../images/background-banner.jpg">
+                                        <img src="../images/GlassesInBasket.jpg">
                                     </div>
                                 </div>
                                 <div class="col-md-7 offset-lg-0 offset-md-1 offset-sm-1 col-sm-7 col-xs-10 col-10">
                                     <div class="title">
-                                        <h3>Title</h3>
+                                        <h3>Bril : 'Doctor of Philosophy' </h3>
                                     </div>
                                     <div class="price">
-                                        <strong>€€€€€</strong>
+                                        <strong id="ItemPrice"></strong>
                                     </div>
                                     <div class="info">
                                         <h4 id="showSpecs">Product info <i id="rotate" class="fas fa-angle-down"></i></h4>
                                         <ul id="specs">
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
-                                            <li>Sterkte: </li>
+                                            <li>Sterkte linkeroog : -1,7 </li>
+                                            <li>Sterkte Rechteroog : -3,2 </li>
+                                            <li>Cilinderafwijking : Geen </li>
+                                            <li>Vorm : Rond/ovaal </li>
+                                            <li>Kleur : Zwart </li>
+                                            <li>Prijscategorie : <span class="prijsklasse">Gold</span></li>
+                                            <li>Beschikbaarheid:  <span class="beschikbaarheid">Direct Leverbaar!</span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -149,28 +154,47 @@
                 </div>
             </div>
         </section>
+        <section class="shipping">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-9 col-md-3">
+                        <select  class="SelectDelivery">
+                            <option value="5.69">Spoedlevering (+5,69)</option>
+                            <option check="checked" value="2.89">Reguliere levering (+2,89)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section voor het totale prijs gedeelte-->
+
         <section class="costs">
             <div class="container">
                 <div class="row">
                     <div class="offset-lg-7 offset-md-7 col-md-5 col-sm-12 col-xs-12 col-12">
                         <div class="cost">
                             <h5>Kosten</h5>
-                            <p>Totaal artikelen:</p><p class="euro">€€€€€€</p>
-                            <p>Verzendkosten:</p><p class="euro">€€€€€€</p>
+                            <p>Totaal artikelen:</p><p class="euro" id="PriceItemsTotal"></p>
+                            <p>Verzendkosten:</p><p class="euro" id="SendCosts"></p>
+                            <p>Korting vanuit abonnement : </p><p class="euro">Geen</p>
                             <hr>
-                            <p>Totaal:</p><p class="euro">€€€€€€</p>
+                            <p>Totaal:</p><p class="euro" id="PriceTotal"></p>
                             <button>Betalen</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Tekst voor de footer -->
+
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3>H3 title</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+                        <h3>Wij van VISIONair</h3>
+                        <p>Een stijlvolle bril hoeft niet duur te zijn! De juiste service met kundig advies is ons kenmerk.. </p>
                     </div>      
                     <div class="offset-2"></div>
                     <div class="col-md-4">
