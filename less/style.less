@@ -1658,6 +1658,55 @@
 				}
 			}
 		}
+		&.contact {
+			position: relative;
+			float: left;
+			width: 100%;
+			margin-bottom: 100px;
+			h2 {
+				color: @primairy-color;
+				font-family: @elsie;
+			}
+			form {
+				position: relative;
+				float: left;
+				width: 100%;
+				label, input {
+					position: relative;
+					float: left;
+					width: 100%;
+				}
+				input {
+					text-indent: 5px;
+					padding: 5px 0;
+				}
+				textarea {
+					position: relative;
+					float: left;
+					width: 100%;
+					min-height: 110px;
+					resize: none;
+					-webkit-transition: all 0.5s ease-in-out;
+					-moz-transition: all 0.5s ease-in-out;
+					-o-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+
+					&:focus {
+						min-height: 150px;
+					}
+				}
+				button {
+					position: relative;
+					float: left;
+					width: 100%;
+					margin: 20px 0;
+					padding: 10px 20px;
+					background-color: @primairy-color;
+					color: @white;
+					border: 1px solid @primairy-color;
+				}
+			}
+		}
 	}
 	footer {
 		border-top: 1px solid @box;
