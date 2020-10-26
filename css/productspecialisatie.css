@@ -1,0 +1,29 @@
+.personaliserenbril {
+    float: left;
+    position: relative;
+    text-align: right;
+    padding: 4px 8px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 6px;
+}
+
+.labelpersonaliseren {
+    position: relative;
+    text-align: right;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.btn {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #d8ae72;
+    color: #fff;
+    cursor: pointer;
+}
