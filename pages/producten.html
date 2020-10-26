@@ -11,35 +11,40 @@
 </head>
 
 <body>
-    <header>
+    <header class="">
+        <!-- Visible menu -->
         <section class="menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
-                        <div class="logo">
+           <div class="container">
+               <div class="row">
+                   <!-- Columns of the logo -->
+                   <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
+                       <div class="logo">
                             <p>VISIONair</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-10 hidden-md hidden-sm hidden-xs">
-                        <nav>
-                            <ul>
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="./producten.html">Onze producten</a></li>
-                                <li><a href="./about-us-page.html">Over ons</a></li>
-                                <li><a href="./prijzen.html">Prijzen</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="./login.html">Inloggen</a></li>
-                                <li><a href="./register.html">Registreren</a></li>
-                                <li><a href="./shopping-basket.html">
-                                     <div class="shopping-cart">
-                                         <div class="amount">2</div>
-                                         <i class="fas fa-shopping-cart"></i>
-                                     </div>
-                                </a></li>
-                            </ul>
-                    </div>
+                       </div>
+                   </div>
+                   <!-- Visible menu on desktop and hidden on tablet and phone (depends on screen width) -->
+                   <div class="col-lg-10 hidden-md hidden-sm hidden-xs">
+                       <nav>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./producten.html">Onze producten</a></li>
+                            <li><a href="./about-us-page.html">Over ons</a></li>
+                            <li><a href="./prijzen.html">Prijzen</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./login.html">Inloggen</a></li>
+                            <li><a href="./register.html">Registreren</a></li>
+                            <li><a href="./shopping-basket.html">
+                                 <div class="shopping-cart">
+                                     <div class="amount">2</div>
+                                     <i class="fas fa-shopping-cart"></i>
+                                 </div>
+                            </a></li>
+                        </ul>
+                       </nav>
+                   </div>
+                   <!-- Visible menu on phone and tablet (depends on screen width) -->
                     <div class="hidden-lg col-md-6 col-sm-6 col-xs-6 col-6">
                         <div class="nav-icon-holder">
                             <div class="nav-icon">
@@ -55,20 +60,65 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               </div>
+           </div>
         </section>
+        <!-- Background-image of the header -->
         <section class="banner">
             <div class="overlay">
                 <h1>Ervaar de sterkte van <br/> onze glazen...</h1>
             </div>
         </section>
+        <!-- Scroll down image, onclick scroll down to the next element on the page -->
         <section class="slide-down">
-            <div class="slide-down-image">
+            <div class="slide-down-image" id="slide-down">
                 <div class="icon">
                     <i class="fas fa-angle-down"></i>
                 </div>
-                <img src="../images/scrolldown.svg" />
+                <img src="../images/scrolldown.svg" alt="scrolldown-image"/>
+            </div>    
+        </section> 
+        <!-- If screen width is x width show sidenav if hamburger menu is clicked and show menu for mobile and tablet  -->
+        <section class="side-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav-icon-holder">
+                            <div class="nav-icon-2">
+                                <div id="hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div id="cross">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./producten.html">Onze producten</a></li>
+                            <li><a href="./about-us-page.html">Over ons</a></li>
+                            <li><a href="./prijzen.html">Prijzen</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./login.html">Inloggen</a></li>
+                            <li><a href="./register.html">Registreren</a></li>
+                            <li>
+                                <a href="./shopping-basket.html">
+                                    <div class="shopping-cart">
+                                        <div class="amount">2</div>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </header>
