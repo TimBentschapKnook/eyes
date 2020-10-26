@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+.prijs {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+}
+
+.filterDiv {
+    display: none;
+}
+
+#filtergroep {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+/* Button style*/
+
+.btn {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: #d8ae72;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #bd955d;
+}
+
+.btn.active {
+    background-color: #fff;
+    border: 1px solid #d8ae72;
+    color: #d8ae72;
+}
+
+#product {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    background-color: #a3b8bd;
+}
+
+#nameandprice {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.image {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+img {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.info {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.productName {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+a.look {
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #d8ae72;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
